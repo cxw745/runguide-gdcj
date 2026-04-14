@@ -19,7 +19,7 @@ jobs:
 
       - name: Push to deploy repo
         env:
-          TARGET_REPO: https://x-access-token:${{ secrets.VERCEL_DEPLOY_TOKEN }}@github.com/cxw745/runaway745-vercel.git
+          TARGET_REPO: https://x-access-token:${{ secrets.VERCEL_DEPLOY_TOKEN }}@github.com/cxw745/runguide-vercel.git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

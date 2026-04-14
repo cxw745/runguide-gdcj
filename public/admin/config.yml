@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: cxw745/runaway745
+  repo: cxw745/runguide-pr
   branch: main
-  base_url: https://gdufe-leap-handbook.vercel.app
+  base_url: https://runguide.vercel.app
   auth_endpoint: api/auth
   open_authoring: true
 

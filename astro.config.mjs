@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://gdufe-leap-handbook.vercel.app',
+  site: 'https://runguide.vercel.app',
   prefetch: {
     prefetchAll: true,
   },
