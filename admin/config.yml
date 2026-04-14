@@ -20,3 +20,5 @@ collections:
       - { name: tags, label: 标签, widget: list, field: { widget: string } }
       - { name: excerpt, label: 摘要, widget: text }
       - { name: body, label: 正文, widget: markdown }
+    editor:
+      preview: true

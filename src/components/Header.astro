@@ -20,6 +20,7 @@ const currentPath = Astro.url.pathname;
     <nav class="nav">
       <a href="/" class:list={['nav-link', { active: currentPath === '/' }]}>首页</a>
       <a href="/articles" class:list={['nav-link', { active: currentPath.startsWith('/articles') }]}>文章</a>
+      <a href="/submit" class:list={['nav-link', { active: currentPath === '/submit' }]}>投稿</a>
       <div class="nav-categories">
         <span class="nav-link">分类 ▾</span>
         <div class="nav-dropdown">
@@ -49,6 +50,7 @@ const currentPath = Astro.url.pathname;
   <div class="mobile-menu" id="mobile-menu">
     <a href="/" class="mobile-menu-link">首页</a>
     <a href="/articles" class="mobile-menu-link">文章</a>
+    <a href="/submit" class="mobile-menu-link">📝 投稿</a>
     {categories.map(cat => (
       <a href={`/articles?category=${encodeURIComponent(cat.name)}`} class="mobile-menu-link">
         {cat.icon} {cat.name}

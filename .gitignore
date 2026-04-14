@@ -28,3 +28,7 @@ pnpm-debug.log*
 
 # submodules / external code
 code/
+
+# product docs (keep local only)
+docs/
+

@@ -2,6 +2,7 @@
   --bg: #FAFAF5;
   --bg-alt: #F5F3EE;
   --surface: #FFFFFF;
+  --read-bg: rgba(245, 242, 239, 0.8);
   --accent: #E5B044;
   --accent-light: #FFF8E1;
   --text-primary: rgba(0, 0, 0, 0.88);
@@ -21,18 +22,19 @@
 }
 
 [data-theme="dark"] {
-  --bg: #0F0E1A;
-  --bg-alt: #14122A;
-  --surface: #1A1932;
+  --bg: #1c1b29;
+  --bg-alt: #222130;
+  --surface: #28273d;
+  --read-bg: rgba(32, 30, 46, 0.85);
   --accent: #8B7CF6;
   --accent-light: rgba(139, 124, 246, 0.12);
-  --text-primary: rgba(255, 255, 255, 0.92);
-  --text-secondary: rgba(255, 255, 255, 0.60);
-  --text-muted: rgba(255, 255, 255, 0.35);
-  --border: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.15);
-  --shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 4px 12px rgba(0, 0, 0, 0.15);
-  --shadow-hover: 0 2px 8px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.2);
+  --text-primary: rgba(220, 218, 230, 0.88);
+  --text-secondary: rgba(180, 178, 195, 0.60);
+  --text-muted: rgba(140, 138, 160, 0.45);
+  --border: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.12);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 4px 12px rgba(0, 0, 0, 0.18);
+  --shadow-hover: 0 2px 8px rgba(0, 0, 0, 0.35), 0 8px 24px rgba(0, 0, 0, 0.22);
 }
 
 *, *::before, *::after {
@@ -162,6 +164,9 @@ img {
   font-size: 16px;
   line-height: 1.85;
   color: var(--text-primary);
+  background-color: var(--read-bg);
+  padding: 32px 40px;
+  border-radius: var(--radius-md);
 }
 
 .prose h1 {
