@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: cxw745/runguide-pr
+  repo: cxw745/runguide
   branch: main
   base_url: https://runguide.vercel.app
   auth_endpoint: api/auth
